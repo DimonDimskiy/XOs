@@ -1,14 +1,6 @@
-import random
+from bot import easy_bot
 from graphic import draw
 from logic import end_game
-
-
-def easy_bot(tab, flag):
-    bot_step = random.choice(range(1, 10))
-    if bot_step in tab and tab[bot_step] == 0:
-        tab[bot_step] = flag
-    else:
-        easy_bot(tab, flag)
 
 
 def user_input(tab, flag):
@@ -53,10 +45,11 @@ def game():
             is_player = True
 
     draw(test_tab)
-
     while True:
+        print(flag)
         if is_bot:
-            easy_bot(test_tab, flag)
+            test_tab = easy_bot(test_tab, flag)
+            #print(test_tab, type(test_tab))
             draw(test_tab)
             if end_game(test_tab, flag):
                 if not is_player:
