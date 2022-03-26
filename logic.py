@@ -35,6 +35,11 @@ def _is_draw(tab):
 def end_game(tab, flag):
     if _is_win(tab):
         print(f'Победил игрок {flag}!')
+        # with open("h_vs_n_stat.txt", "a") as f:
+        #     f.write(str(flag))
     if _is_draw(tab):
         print("Победила дружба!")
+        # with open("h_vs_n_stat.txt", "a") as f:
+        #     f.write("0")
     return _is_draw(tab) or _is_win(tab)
+
