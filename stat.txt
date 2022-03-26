@@ -1,0 +1,8 @@
+Easy vs normal w/d/l:   46/230/723
+Easy vs hard w/d/l:     29/153/817
+Normal vs easy w/d/l:   906/85/8
+Normal vs normal w/d/l: 325/534/140
+Normal vs hard w/d/l:   162/777/60
+Hard vs easy w/d/l:     957/38/4
+Hard vs normal w/d/l:   293/670/36
+Hard vs hard w/d/l:     315/636/48
